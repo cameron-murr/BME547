@@ -13,6 +13,8 @@ def interface():
             HDL_driver()
         elif choice == "2":
             LDL_driver()
+        elif choice == "3":
+            total_driver()
     return
 
 def accept_input(test_name):
