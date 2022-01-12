@@ -12,3 +12,8 @@ Here are the specifications for my databse
 * Address
   - Street
   - City
+  - State
+  - Zipcode
+
+### Info Files
+HDL, LDL
