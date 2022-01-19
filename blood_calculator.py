@@ -1,3 +1,5 @@
+print("This is the blood_calculator module and python calls it {}".format(__name__))
+
 def interface():
     print("Blood Test Analysis")
     keep_running = True
@@ -5,6 +7,7 @@ def interface():
         print("Options")
         print("1-HDL")
         print("2-LDL")
+        print("3-Total")
         print("9-Quit")
         choice = input ("Enter your choice: ")
         if choice == "9":
@@ -69,4 +72,5 @@ def total_driver():
     classification = check_total(total_value)
     print_result("Total Cholesterol", total_value, classification)
 
-interface()
+if __name__ == "__main__":
+    interface()
