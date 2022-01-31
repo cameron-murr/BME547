@@ -1,9 +1,9 @@
 import pytest
 
 @pytest.mark.parametrize("tuple1, tuple2, x, expected", [
-        [tuple(0,0), tuple(2,2), 1, 1]  
-        [tuple(-5,2), tuple(10,2), 15, 2]
-        [tuple(1,0), tuple(5,-2), 0, 0.5]      
+        [(0,0), (2,2), 1, 1],  
+        [(-5,2), (10,2), 15, 2],
+        [(1,0), (5,-2), 0, 0.5],      
         ])
 
 
