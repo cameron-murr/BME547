@@ -9,3 +9,4 @@ def test_parse_weight_input(input, expected):
     from weight_entry import parse_weight_input
     answer = parse_weight_input(input)
     assert answer == expected
+    
