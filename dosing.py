@@ -49,6 +49,7 @@ def input_data():
     weight_input = input("Enter weight: ")
     return weight_input, diagnosis
 
+
 def analysis(weight_input, diagnosis):
     weight_data = weight_input.split(" ")
     weight = float(weight_data[0])
@@ -59,6 +60,7 @@ def analysis(weight_input, diagnosis):
     dosage_mg_per_kg = dosages_mg_per_kg[diagnosis-1]
     dosage_mg_first_day = weight * dosage_mg_per_kg
     return weight, dosage_mg_first_day
+
 
 def output(weight, dosage_mg_first_day):
     print("CORRECT DOSAGE")
@@ -71,5 +73,3 @@ if __name__ == '__main__':
     weight_input, diagnosis = input_data()
     weight, dosage_first_day = analysis(weight_input, diagnosis)
     output(weight, dosage_first_day)
-
-
