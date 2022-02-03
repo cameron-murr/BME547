@@ -1,7 +1,7 @@
-print("This is the databse module and python calls it {}".format(__name__))
-
 from blood_calculator import *
 import math
+
+print("This is the databse module and python calls it {}".format(__name__))
 
 HDL_value = 55
 

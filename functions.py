@@ -3,10 +3,11 @@ def add(a, b):
         return "No negatives"
     c = a + b
     d = a - b
-    return c,d
+    return c, d
 
-x,y = add(1,2)
+
+x, y = add(1, 2)
 print(x)
 print(y)
-#print(x[0])
-#print(x[1])
+# print(x[0])
+# print(x[1])

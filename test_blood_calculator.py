@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.mark.parametrize("input_HDL, expected", [
     [70, "Normal"],
     [45, "Borderline Low"],
