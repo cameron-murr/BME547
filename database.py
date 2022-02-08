@@ -7,10 +7,8 @@ class Patient:
         self.tests = []
         self.dob = dob
 
-
     def __repr__(self):
         return "Patient: {}, {}".format(self.name, self.id)
-
 
     def output_patient(self):
         outstring = "Name: {}\n".format(self.name)
@@ -19,21 +17,17 @@ class Patient:
         outstring += "Tests: {}\n".format(self.tests)
         return outstring
 
-
     def is_adult_or_minor(self):
         if self.age >= 18:
             return "Adult"
         else:
             return "Minor"
 
-    
     def id_tag_string(self):
         return "{}: {}".format(self.name, self.id)
 
-
     def add_test(self, test_name, test_result):
         self.tests.append((test_name, test_result))
-
 
     def increase_age(self, number_of_years):
         self.age += number_of_years
