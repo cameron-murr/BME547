@@ -16,5 +16,5 @@ def sqrt(n):
     while(x - y > e):
         x = (x + y) / 2
         y = n / x
-    
+
     return x
