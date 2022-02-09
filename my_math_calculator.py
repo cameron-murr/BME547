@@ -1,12 +1,7 @@
-from multiprocessing.sharedctypes import Value
-import string
-
-
 def sqrt(n):
-
-
     if n < 0:
-        raise ValueError("{} is a negative number which is not allowed".format(n))
+        raise ValueError("{} is a negative number "
+                         "which is not allowed".format(n))
 
     if n is type(str):
         raise TypeError("Cannot send a string")
