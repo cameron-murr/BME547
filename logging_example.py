@@ -34,5 +34,5 @@ def process_line(data_line, line_number):
 
 if __name__ == "__main__":
     logging.basicConfig(filename="log_example.log",
-                        filemode = "w", level = logging.WARNING)
+                        filemode="w", level=logging.WARNING)
     analyze_data_file("tsh_data.txt")
