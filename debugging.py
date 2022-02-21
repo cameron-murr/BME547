@@ -1,5 +1,6 @@
 import pudb
 
+
 def main():
     a = 5
     b = 6
@@ -8,8 +9,10 @@ def main():
     print_me(c)
     return c
 
+
 def print_me(c):
     print(c)
+
 
 if __name__ == "__main__":
     main()

@@ -18,17 +18,21 @@ def analyze_data_file(filename):
 def process_line(data_line, line_number):
     data_points = data_line.strip("\n").split(",")
     if len(data_points) < 5:
-        logging.warning("The line {} has less than 5 data points".format(line_number))
+        logging.warning("The line {} has less than 5 data"
+                        " points".format(line_number))
     data_numbers = [float(i) for i in data_points]
     if any(i < 0 for i in data_numbers):
-        logging.error("The line {} had a negative number".format(line_number))
+        logging.error("The line {} had a negative "
+                      "number".format(line_number))
         return
     if all(1.0 <= i <= 4.0 for i in data_numbers):
         pass
     else:
-        logging.info("Line {} was out of range".format(line_number))
+        logging.info("Line {} was out of "
+                     "range".format(line_number))
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="log_example.log", filemode = "w", level=logging.WARNING)
+    logging.basicConfig(filename="log_example.log", 
+                        filemode = "w", level=logging.WARNING)
     analyze_data_file("tsh_data.txt")
