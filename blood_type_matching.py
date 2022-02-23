@@ -19,3 +19,5 @@ out_data = {"Name": "csm57", "Match": "No"}
 
 r2 = requests.post(
     "http://vcm-7631.vm.duke.edu:5002/match_check", json=out_data)
+
+print(r2.text)
