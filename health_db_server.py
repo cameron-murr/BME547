@@ -15,7 +15,7 @@ db = []
 
 def add_patient_to_db(name, id, blood_type):
     new_patient = {"name": name, "id": id,
-                    "blood_type": blood_type, "tests": {"HDL": 100}}
+                   "blood_type": blood_type, "tests": {"HDL": 100}}
     db.append(new_patient)
     return True
 
